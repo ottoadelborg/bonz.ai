@@ -1,0 +1,249 @@
+/* HEADER NAV */
+body {
+    background-color: #EBEBEB;
+}
+
+.header__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+    padding-top: 10px;
+    margin: 0;
+    height: 83px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.37);
+}
+
+li {
+    list-style-type: none;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+
+.nav__book {
+    background-color: #727272;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    margin-top: 10px;
+    display: block;
+    color: white;
+    border: 0;
+    width: 163px;
+    height: 53px;
+    border-radius: 15px;
+    font-size: 16px;
+    transition-duration: 0.4s;
+}
+
+.nav__book:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.nav__about {
+    padding: 3px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 25px;
+    display: block;
+    color: black;
+    font-size: 16px; 
+}
+
+.nav__home {
+    padding: 3px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 25px;
+    display: block;
+    color: black;
+    font-size: 16px;
+}
+.nav__rooms {
+    padding: 3px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 25px;
+    display: block;
+    color: black;
+    font-size: 16px;
+}
+
+.nav__line {
+    border-left: 2px solid black;
+    padding-left: 7px;
+    margin-top: 20px;
+    height: 35px;
+    opacity: 60%;
+    border-radius: 10%;
+}
+
+/* -------------------------------------------- */
+
+/* SEARCH BUTTON */
+
+.button__search {
+    width: 113px;
+    height: 53px;
+    border-radius: 15px;
+    background-color: #727272;
+    color: white;
+    border: 0;
+    font-family: 'Montserrat Alternates', sans-serif;
+    cursor: pointer;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+.button__search:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+/* -------------------------------------------- */
+
+/* ROOM OVERWIEW */
+
+.room__template {
+    margin-top: 1rem;
+    margin-left: 7rem;
+    display: flex;
+    width: 912px;
+    flex-direction: row;
+}
+
+.booking__header--text {
+    font-family: 'Montserrat Alternates', sans-serif;
+    width: 100%;
+    font-size: 28px;
+    margin: 1rem;
+}
+
+span {
+    display: flex;
+    width: 150px;
+    margin-top: 3rem;
+}
+
+.room__template--headertext {
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.text__window {
+    font-family: 'Gruppo', cursive;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.37);
+    display: flex;
+    width: 501px;
+    height: 230px;
+    margin-top: 40px;
+}
+
+.room__picture--day{
+    display: flex;
+    width: 60%;
+}
+
+
+/* -------------------------------------------- */
+
+/* HOME ROOM OVERWIEW */
+
+
+.home__room--night {
+    height: 375px;
+    width: 638px;
+}
+
+.home__room--button {
+    margin: 5px;
+    display: grid;
+    grid-column: 1;
+    font-family: 'Montserrat Alternates', sans-serif;
+    padding-top: 20px;
+    grid-row: 2;
+    height: 61px;
+    width: 333px;
+    border: none;
+    opacity: 70%;
+}
+
+/* -------------------------------------------- */
+
+/* BOOKING MENU */
+
+.booking__section {
+    flex-direction: row;
+    max-width: 100%;
+    height: 177px;
+    background-color: white;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.37);
+    border-radius: 5px;
+}
+
+.booking__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.booking__input--date {
+    display: flex;
+    width: 345px;
+    height: 64px;
+    background-color: #EBEBEB;
+    border: solid black 1px;
+    border-radius: 15px;
+    margin-left: 7rem;
+}
+
+.booking__input--guest {
+    display: flex;
+    width: 345px;
+    height: 64px;
+    margin-left: 3rem;
+    background-color: #EBEBEB;
+    font-family: 'Montserrat Alternates', sans-serif;
+    border: solid black 1px;
+    border-radius: 15px;
+}
+
+.booking__input--button {
+    font-family: 'Montserrat Alternates', sans-serif;
+    background-color: #727272;
+    color: white;
+    margin-top: 5px;
+    margin-right: 3.5rem;
+    width: 113px;
+    height: 53px;
+    border-radius: 15px;
+    border: none;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.booking__input--button:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    cursor: point;
+}
+
+.booking__header--text {
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 28px;
+    margin: 1rem;
+}
+
+/* -------------------------------------------- */

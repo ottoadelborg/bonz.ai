@@ -1,0 +1,136 @@
+body {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: auto;
+    margin: 0;
+    background-color: #EBEBEB;
+    background: url(/Bonzai/photos/03-day.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: auto;
+}
+
+header {
+    grid-column: 1 / 9;
+    grid-row: 1;
+}
+
+.main__booking {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    grid-column: 1 / 9;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.room__template {
+    padding: 1rem
+}
+
+.button__search {
+    align-self: flex-end;
+    height: 100px;
+}
+
+.booking__section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 17rem;
+    height: auto;
+}
+
+.booking__input--date{
+    margin-left:15rem;
+}
+
+
+.booking__header--text {
+    font-family: 'Montserrat Alternates', sans-serif;
+    width: 100%;
+    font-size: 28px;
+    margin: 1rem;
+}
+
+.booking__container {
+    grid-column: 2 / span 7;
+    margin-top: 3rem;
+}
+
+.room__template {
+    grid-column: 2 / 7;
+}
+
+.room__template--text {
+    font-family: 'Gruppo', cursive;
+    width: 501px;
+    height: 220px;
+}
+
+span {
+    display: flex;
+    width: 150px;
+    margin-top: 3rem;
+}
+
+.room__template--headertext {
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+    header{
+        display: block;
+    }
+    .main__booking{
+        width: 100%;
+    }
+
+    .booking__section {
+        width: 100%;
+    }
+
+    .booking__container{
+        justify-content: center;
+    }
+
+    .booking__input--date {
+        width: 170px;
+        margin-left: 1rem;
+        margin-right: 2rem;
+    }
+
+    .booking__input--guest {
+        width: 170px;
+        margin-left: 0;
+        margin-right: 2rem;
+    }
+
+    .room__template {
+        max-width: 100%;
+        flex-direction: column;
+        flex-direction: column-reverse;
+        margin-top:1rem;
+    }
+    
+    .room__template--text{
+        font-size: 20px;
+        max-width: 100%;
+    }
+    .booking__input--button{
+        margin-right: 1rem;
+    }
+
+    .text__window{
+       max-width: 60%;
+       height: 50%;
+    }
+
+    .button__search{
+        height: 3rem;
+    }
+
+
+}

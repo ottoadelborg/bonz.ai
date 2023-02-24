@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: auto;
+    margin: 0;
+    background-color: #EBEBEB;
+}
+
+header {
+    grid-column: 1 / 9;
+}
+
+.main__main {
+    grid-column: 2 / span 7
+}
+
+
+
+.main__slogan {
+    display: flex;
+    flex-direction: column;
+    grid-column: 1 /  span 8;
+    background: url(/Bonzai/photos/09-night.jpg) no-repeat center center fixed;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+
+.booking__section {
+    margin-top: 5rem;
+}
+
+.header__logo {
+    margin-top: 10rem;
+    width: 338px;
+    height: 344px;
+}
+
+.booking__container {
+    margin-bottom: 15px;
+}
+
+.logo__slogan{
+    height: 50px;
+    width: 639px;
+    font-size: 36px;
+    color: white;
+    margin-top: 3rem;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.home__room--promotion {
+    margin-top: 7rem;
+    display: flex;
+    grid-column: 2 / span 6;
+}
+
+.home__room--text {
+    font-family: 'Gruppo', cursive;
+    font-size: 20px;
+    width: 485px;
+    height: 242px;
+    line-height: 1.5rem;
+    margin-left: 5rem;
+    margin-top: 7rem;
+}
+
+.home__office--promotion {
+    display: flex;
+    grid-template-columns: 2 / span 8;
+    flex-direction: row-reverse;
+}
+
+.home__office {
+    margin-right: 5rem;
+    padding-top: 5rem;
+    height: 432px;
+    width: 638px;
+}
+
+.home__office--text {
+    font-size: 20px;
+    padding-top: 10rem;
+    margin-right: 5rem;
+    font-family: 'Gruppo', cursive;
+    line-height: 1.5rem;
+    width: 485px;
+    height: 242px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .header__logo {
+        margin-top: 10rem;
+        width: 280px;
+        height: 280px;
+    }
+
+    .logo__slogan{
+        padding-left: 5.5rem;
+        font-size: 27px;
+    }
+
+    .booking__section {
+        width: 600px;
+    }
+
+    .booking__container{
+        justify-content: center;
+    }
+
+    .booking__input--date {
+        width: 150px;
+        margin-left: 0;
+        margin-right: 2rem;
+    }
+
+    .booking__input--guest {
+        width: 150px;
+        margin-left: 0;
+        margin-right: 2rem;
+    }
+
+    .home__room--promotion {
+        display: grid;
+    }
+
+    .home__room--night {
+        width: 410px;
+        height: 250px;
+    }
+
+    .home__room--text {
+        margin-left: 0;
+        line-height: 2rem;
+    }
+
+    .home__office--promotion {
+        display: grid;
+    }
+
+    .home__office {
+        width: 410px;
+        height: 350px;
+    }
+
+    .home__office--text {
+        padding-top: 4rem;
+        line-height: 2rem;
+    }
+
+}
